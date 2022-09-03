@@ -17,7 +17,7 @@ Profile and banner are optional! Just replace the file in the public folder if y
 */
 export const images = {
     profilePng: "/profile.jpg",
-    bannerPng: "/banner.jpg",
+    bannerPng: "/banner.png",
 } as Images;
 
 import { getRandomTheme } from "./color_themes";
