@@ -16,8 +16,8 @@ Profile and banner are optional! Just replace the file in the public folder if y
    - Dimensions: 455 x 130 (it is resized automatically!)
 */
 export const images = {
-    profilePng: "/profile.png",
-    bannerPng: "/banner.png",
+    profilePng: "/profile.jpg",
+    bannerPng: "/banner.jpg",
 } as Images;
 
 import { getRandomTheme } from "./color_themes";
@@ -25,10 +25,10 @@ export const colors = getRandomTheme();
 export const random_theme_button = true;
 
 export const base_profile = {
-    first_name: "John",
-    last_name: "Doe",
+    first_name: "Enzo",
+    last_name: "Falone",
     subtitle: "Aspiring Software Developer",
-    bio: ["Miami, FL", "Florida International University"],
+    bio: ["Miami, FL", "Miami Dade College"],
     name() {
         return this.first_name + " " + this.last_name;
     },
@@ -36,35 +36,41 @@ export const base_profile = {
 
 export const extended_profile = {
     gender: "Male", // You can input any gender
-    username: "Cobra", // You can opt out my commenting either of these
+    username: "enzofalone", // You can opt out my commenting either of these
 } as ExtendedProfile;
 
 export const skillsList = [
-    "Time management",
+    "Full Stack Developer",
+    "Frontend",
+    "Backend",
+    "Databases",
+    "Deployment",
+    "Git",
+    "React.js",
+    "Express.js",
+    "Node.js",
+    "Angular",
     "Communication",
     "Adaptability",
     "Problem-solving",
     "Teamwork",
     "Creativity",
     "Leadership",
-    "Interpersonal skills",
     "Work ethic",
     "Attention to detail",
     "Stress management",
-    "Organization",
-    "Prioritizing",
-    "Planning",
-    "Goal setting",
-    "Verbal communication",
-    "Written communication",
-    "Presentation",
-    "Constructive feedback",
-    "Active listening",
-    "Self-management",
-    "Optimism",
-    "Calmness",
-    "Analysis",
-    "Self-motivation",
+    // "Organization",
+    // "Prioritizing",
+    // "Planning",
+    // "Goal setting",
+    // "Presentation",
+    // "Constructive feedback",
+    // "Active listening",
+    // "Self-management",
+    // "Optimism",
+    // "Calmness",
+    // "Analysis",
+    // "Self-motivation",
 ];
 
 /**
@@ -81,78 +87,80 @@ There are no required links, but each link must have:
  */
 const projects_linksList = [
     {
-        url: "https://google.com",
-        title: "Portfolio",
-        content: "By default, content is the url (view next to continue)",
+        url: "https://github.com/trillion-dollar-baby/autolog",
+        title: "Autolog",
+        content: "Inventory Management System designed for traditional automotive businesses that use pen and paper and need to transition into an efficient and easy digital solution!",
     },
     {
-        url: "https://google.com",
-        title: "Todo App",
-        content: "but you can force content by specifying like this!",
+        url: "https://github.com/enzofalone/EnzoGram",
+        title: "Android Instagram Clone",
+        content: "Instagram clone created in Android with main features of the original app!",
     },
     {
-        url: "https://google.com",
-        title: "And more!",
+        url: "https://github.com/enzofalone/student-store",
+        title: "Student Store Application",
+        content: "Mock-up student store application featuring purchases and display items of store stored in server!"
     },
 ] as Link[];
 
 const experiences = [
     {
-        company: "Company X",
+        company: "",
         meta: [
-            "Software Engineer Intern",
+            "Full Stack Developer Intern",
             "Jun 2022 - Aug 2022",
-            "Space, Space",
+            // "Space, Space",
         ],
         desc: [
-            "Did many things to improve the company",
-            "Hired a private inspector",
-            "Became superman!",
+            "Selected into a cohort of 35 interns out of 1800 applicants into CodePath’s SITE program, an intense 10-week internship focused on full stack web development trained by industry professionals",
+            "Led, planned, and developed within a team of 3 a 5-week MVP in a SCRUM setting using PostgreSQL, Express.js, ReactJS, and NodeJS technologies taught in program for project",
+            "Finished program with a score of 5 out of 5 reviewed by industry professionals. Achieved a topmost calculated overall performance of 206% throughout SITE program for collaboration and accomplishments of all four projects’ features",
+            "Learned how to successfully design, implement, and deliver code up to industry standards in a focus for features to be: Scalable, maintainable and readable thanks to constant feedback by industry mentors"
         ],
     },
-    {
-        company: "Company Y",
-        meta: [
-            "Software Engineer Intern",
-            "Jun 2021 - Aug 2021",
-            "Space, Space",
-        ],
-        desc: [
-            "Did many things to improve the company",
-            "Hired a private inspector",
-            "Became superman!",
-        ],
-    },
+    // {
+    //     company: "Company Y",
+    //     meta: [
+    //         "Software Engineer Intern",
+    //         "Jun 2021 - Aug 2021",
+    //         "Space, Space",
+    //     ],
+    //     desc: [
+    //         "Did many things to improve the company",
+    //         "Hired a private inspector",
+    //         "Became superman!",
+    //     ],
+    // },
 ] as Experience[];
 
-const games_linksList = [
-    {
-        url: "https://google.com",
-        title: "Game 1",
-    },
-    {
-        url: "https://google.com",
-        title: "Game 2",
-        content: "But I have more!",
-    },
-] as Link[];
+// const games_linksList = [
+//     {
+//         url: "https://google.com",
+//         title: "Game 1",
+//     },
+//     {
+//         url: "https://google.com",
+//         title: "Game 2",
+//         content: "But I have more!",
+//     },
+// ] as Link[];
 
 const contactMe_linksList = [
     {
-        url: "https://www.linkedin.com/in/",
+        url: "https://www.linkedin.com/in/enzofalone",
         icon: "/icons/linkedin.svg",
         title: "LinkedIn",
     },
     {
-        url: "https://github.com/",
+        url: "https://github.com/enzofalone",
         icon: "/icons/github.svg",
         title: "GitHub",
     },
     {
-        url: "mailto: someone@gmail.com",
+        url: "mailto: enzofalone123@gmail.com",
         title: "Email",
         icon: "/icons/email.svg",
-        content: "someone@gmail.com",
+        content: "enzofalone123@gmail.com",
     },
 ] as Link[];
 
@@ -162,7 +170,7 @@ const contactMe_linksList = [
 export const sections = {
     // An example of a button. This button is a resume download
     Resume: {
-        url: "/Resume.docx",
+        url: "/Resume.pdf",
         download_name: `${base_profile.name()}_Resume.pdf`,
     },
     // An example of a list of projects, that is opened on load
@@ -174,9 +182,9 @@ export const sections = {
     "Work Experience": {
         experiences: experiences,
     },
-    Games: {
-        links: games_linksList,
-    },
+    // Games: {
+    //     links: games_linksList,
+    // },
     "Contact Me": {
         links: contactMe_linksList,
     },
